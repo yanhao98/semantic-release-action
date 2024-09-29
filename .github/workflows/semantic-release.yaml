@@ -35,7 +35,7 @@ jobs:
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
       - name: semantic-release
-        run: npx semantic-release@24
+        run: npx semantic-release@24 --dry-run
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         # https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-use-semantic-release-to-publish-non-javascript-packages
@@ -46,3 +46,4 @@ jobs:
       - name: 打印 tag
         run: |
           git tag
+          node run.mjs
