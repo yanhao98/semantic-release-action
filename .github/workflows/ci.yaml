@@ -42,7 +42,7 @@ jobs:
         
         # https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-run-semantic-release-on-my-local-machine-rather-than-on-a-ci-server
         # $ NPM_TOKEN=<your_npm_token> GH_TOKEN=<your_github_token> npx semantic-release --no-ci
-        # $ npx semantic-release@24 --plugins @semantic-release/release-notes-generator,@semantic-release/changelog --no-ci
+        # $ npx semantic-release@24 --plugins @semantic-release/release-notes-generator,@semantic-release/changelog --dry-run
       - name: 打印 tag
         run: |
           git tag
