@@ -17,3 +17,21 @@ BREAKING CHANGE:
 ## 参考
 - [renovate's build.yml](https://github.com/renovatebot/renovate/blob/9ed6666aeb15f4cd795c598e4007c097aa4c4cc8/.github/workflows/build.yml#L715)
 - https://github.dev/semantic-release/npm
+
+```json
+{
+  "__package.json__": "release",
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/npm",
+    [
+      "@semantic-release/git",
+      {
+        "message": "chore(release): ${nextRelease.version} \n\n${nextRelease.notes}"
+      }
+    ]
+  ]
+}
+```
