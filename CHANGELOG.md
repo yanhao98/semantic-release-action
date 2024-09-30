@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/yanhao98/semantic-release-example/compare/v1.0.0...v1.0.1) (2024-09-30)
+
+
+### Bug Fixes
+
+* **ci:** 22:24 ([53ade95](https://github.com/yanhao98/semantic-release-example/commit/53ade95aaea18ecf4ed3aad33357069162eef444))
+
 # 1.0.0 (2024-09-30)
 
 
