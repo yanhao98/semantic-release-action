@@ -16,11 +16,9 @@ jobs:
     # permissions:
     #   id-token: write
     steps:
-      - name: Checkout + Install pnpm + Setup Node.js
-        uses: yanhao98/composite-actions/setup-node-pnpm-install@main
-      - name: 安装依赖
-        run: pnpm install --frozen-lockfile
-      - run: node run.mjs
-      - run: git status
-      - name: 检查是否有未推送的 tag
-        run: git tag -l --sort=-creatordate | while read tag; do git ls-remote --tags origin | grep -q "$tag" || echo "$tag"; done
+      - uses: yanhao98/composite-actions/setup-node-environment@main
+      - run: npx semantic-release@24 --dry-run
+      # - run: node run.mjs
+      # - run: git status
+      # - name: 检查是否有未推送的 tag
+      #   run: git tag -l --sort=-creatordate | while read tag; do git ls-remote --tags origin | grep -q "$tag" || echo "$tag"; done
