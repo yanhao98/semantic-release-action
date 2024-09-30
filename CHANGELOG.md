@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/yanhao98/semantic-release-example/compare/v1.0.4...v1.0.5) (2024-09-30)
+
+
+### Bug Fixes
+
+* 修复f1并添加f0006的修复记录 ([0c59268](https://github.com/yanhao98/semantic-release-example/commit/0c59268b9b0c586c684900706e33f51db624caec))
+
 ## [1.0.4](https://github.com/yanhao98/semantic-release-example/compare/v1.0.3...v1.0.4) (2024-09-30)
 
 
