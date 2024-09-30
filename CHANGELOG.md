@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/yanhao98/semantic-release-example/compare/v1.0.5...v1.1.0) (2024-09-30)
+
+
+### Features
+
+* 更新README.md，调整参考链接顺序并添加新链接 ([bd37769](https://github.com/yanhao98/semantic-release-example/commit/bd37769d3b020c2b6c35e6f75a6a610f3113dda3))
+
 ## [1.0.5](https://github.com/yanhao98/semantic-release-example/compare/v1.0.4...v1.0.5) (2024-09-30)
 
 
