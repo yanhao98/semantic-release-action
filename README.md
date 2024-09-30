@@ -35,3 +35,5 @@ BREAKING CHANGE:
   ]
 }
 ```
+
+- https://github.com/googleapis/release-please/blob/main/docs/cli.md
