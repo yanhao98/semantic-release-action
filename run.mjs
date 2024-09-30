@@ -2,6 +2,7 @@ const semanticRelease = await import('semantic-release');
 const prepareChangelog = await import('@semantic-release/changelog/lib/prepare.js');
 import getLogger from "semantic-release/lib/get-logger.js";
 import { tag } from "semantic-release/lib/git.js";
+import fs from 'node:fs';
 
 // https://github.com/semantic-release/semantic-release/blob/master/index.js
 const result = await semanticRelease.default(
@@ -32,15 +33,16 @@ if (result !== false) {
   // fs.writeFileSync(process.env.GITHUB_OUTPUT, `matrix=${JSON.stringify(matrix)}`);
 
   const { nextRelease } = result;
-  const context = {
-    cwd: process.cwd(),
-    nextRelease: result.nextRelease,
-    logger: getLogger({ stdout: process.stdout, stderr: process.stderr }),
-  }
-  await prepareChangelog.default({}, context);
+  // const context = {
+  //   cwd: process.cwd(),
+  //   nextRelease: result.nextRelease,
+  //   logger: getLogger({ stdout: process.stdout, stderr: process.stderr }),
+  // }
+  // await prepareChangelog.default({}, context);
+  console.debug(`nextRelease.version :>> `, nextRelease.version);
+  fs.writeFileSync(process.env.GITHUB_OUTPUT, `NEXT_RELEASE_VERSION=${nextRelease.version}`);
 
-
-  await tag(nextRelease.gitTag, nextRelease.gitHead); // git tag -d v2.0.0
+  // await tag(nextRelease.gitTag, nextRelease.gitHead); // git tag -d v2.0.0
   /* 
   export async function tag(tagName, ref, execaOptions) {
     await execa("git", ["tag", tagName, ref], execaOptions);
