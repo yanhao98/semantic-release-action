@@ -36,4 +36,9 @@ BREAKING CHANGE:
 }
 ```
 
+---
+
+- https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-run-semantic-release-on-my-local-machine-rather-than-on-a-ci-server
+- https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-use-semantic-release-to-publish-non-javascript-packages
 - https://github.com/googleapis/release-please/blob/main/docs/cli.md
+- https://github.com/absolute-version/commit-and-tag-version

@@ -16,31 +16,9 @@ jobs:
     # permissions:
     #   id-token: write
     steps:
-      - name: 拉取代码
-        uses: actions/checkout@v4
-        with:
-          # fetch-depth: 0 # zero stands for full checkout, which is required for semantic-release
-          filter: blob:none # we don't need all blobs, only the full tree
-          show-progress: false
-      - name: 安装 pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: latest
-          run_install: false
-      - name: 安装 Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: 'pnpm'
+      - name: Checkout + Install pnpm + Setup Node.js
+        uses: yanhao98/composite-actions/setup-node-pnpm-install@main
       - name: 安装依赖
         run: pnpm install --frozen-lockfile
-      - name: semantic-release
-        run: npx semantic-release@24 --dry-run
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        # https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-use-semantic-release-to-publish-non-javascript-packages
-        
-        # https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-run-semantic-release-on-my-local-machine-rather-than-on-a-ci-server
-        # $ NPM_TOKEN=<your_npm_token> GH_TOKEN=<your_github_token> npx semantic-release --no-ci
-        # $ npx semantic-release@24 --plugins @semantic-release/release-notes-generator,@semantic-release/changelog --dry-run
       - run: node run.mjs
+      - run: git status
