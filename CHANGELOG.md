@@ -1,3 +1,13 @@
+## [1.0.3](https://github.com/yanhao98/semantic-release-example/compare/v1.0.2...v1.0.3) (2024-09-30)
+
+
+### Bug Fixes
+
+* **f1:** 22:40 ([860d171](https://github.com/yanhao98/semantic-release-example/commit/860d171e6875404166ef5b79f58a0ebf1521249f))
+* **f1:** 22:41 ([5570b5d](https://github.com/yanhao98/semantic-release-example/commit/5570b5d37eedc5a9cec3470f2fa51e48688d7f17))
+* **f1:** 修复f1 ([fa00c49](https://github.com/yanhao98/semantic-release-example/commit/fa00c49a1f76658e834f1d104e1da6da9fa5c2ae))
+* **f2:** 修复f2 ([057394d](https://github.com/yanhao98/semantic-release-example/commit/057394da4bbe9ab5e01bedbabfffc66fbc508f41))
+
 ## [1.0.2](https://github.com/yanhao98/semantic-release-example/compare/v1.0.1...v1.0.2) (2024-09-30)
 
 
