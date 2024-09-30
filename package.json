@@ -1,12 +1,18 @@
 {
+	"private": false,
 	"packageManager": "pnpm@9.11.0",
 	"name": "@murielmay67-1/semantic-release-example",
-	"private": false,
 	"files": [],
+	"scripts": {
+		"build:ncc": "ncc build --minify --no-source-map-register --no-cache dist/tsc/index.js --out dist/",
+		"build": "tsc && pnpm run build:ncc"
+	},
 	"devDependencies": {
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
-		"semantic-release": "^24.1.2"
+		"@vercel/ncc": "^0.38.2",
+		"semantic-release": "^24.1.2",
+		"typescript": "^5.3.3"
 	},
 	"renovate": {
 		"extends": [
