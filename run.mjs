@@ -5,6 +5,7 @@ import { tag } from "semantic-release/lib/git.js";
 import fs from 'node:fs';
 
 // https://github.com/semantic-release/semantic-release/blob/master/index.js
+// https://github.dev/semantic-release/npm
 const result = await semanticRelease.default(
   {
     // noCi: false,

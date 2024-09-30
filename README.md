@@ -15,12 +15,13 @@ BREAKING CHANGE:
 ```
 
 ## 参考
-- [renovate's build.yml](https://github.com/renovatebot/renovate/blob/9ed6666aeb15f4cd795c598e4007c097aa4c4cc8/.github/workflows/build.yml#L715)
-- https://github.dev/semantic-release/npm
+---
+- [Can I run semantic-release on my local machine rather than on a CI server?](https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-run-semantic-release-on-my-local-machine-rather-than-on-a-ci-server)
+- [Can I use semantic-release to publish non-JavaScript packages?](https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-use-semantic-release-to-publish-non-javascript-packages)
 
 ---
+- [renovate's build.yml](https://github.com/renovatebot/renovate/blob/9ed6666aeb15f4cd795c598e4007c097aa4c4cc8/.github/workflows/build.yml#L715)
 
-- https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-run-semantic-release-on-my-local-machine-rather-than-on-a-ci-server
-- https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-use-semantic-release-to-publish-non-javascript-packages
-- https://github.com/googleapis/release-please/blob/main/docs/cli.md
-- https://github.com/absolute-version/commit-and-tag-version
+---
+- [release-please](https://github.com/googleapis/release-please/blob/main/docs/cli.md)
+- [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version)
