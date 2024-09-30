@@ -13,10 +13,9 @@ env:
 jobs:
   release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-      actions: write
+    permissions:                # Job-level permissions configuration starts here
+      contents: write           # 'write' access to repository contents
+      pull-requests: write      # 'write' access to pull requests
     steps:
       - uses: yanhao98/composite-actions/setup-node-environment@main
       - run: npx semantic-release@24
