@@ -18,6 +18,8 @@ jobs:
     steps:
       - uses: yanhao98/composite-actions/setup-node-environment@main
       - run: npx semantic-release@24
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #  --dry-run
       
       # - run: node run.mjs
