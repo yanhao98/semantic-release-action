@@ -7,13 +7,13 @@ import { tag } from "semantic-release/lib/git.js";
 const result = await semanticRelease.default(
   {
     // noCi: false,
-    plugins: [
-      "@semantic-release/commit-analyzer", // https://github.com/semantic-release/commit-analyzer
-      "@semantic-release/release-notes-generator", // https://github.com/semantic-release/release-notes-generator
-      // "@semantic-release/changelog", // https://github.com/semantic-release/changelog
-      // https://github.com/semantic-release/git
-    ],
-    dryRun: true,
+    // plugins: [
+    //   "@semantic-release/commit-analyzer", // https://github.com/semantic-release/commit-analyzer
+    //   "@semantic-release/release-notes-generator", // https://github.com/semantic-release/release-notes-generator
+    //   // "@semantic-release/changelog", // https://github.com/semantic-release/changelog
+    //   // https://github.com/semantic-release/git
+    // ],
+    // dryRun: true,
   },
   {
     // stdout: { write: () => { }, }, stderr: { write: () => { }, },

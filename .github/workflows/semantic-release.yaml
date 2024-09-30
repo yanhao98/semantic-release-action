@@ -18,13 +18,15 @@ jobs:
       pull-requests: write      # 'write' access to pull requests
     steps:
       - uses: yanhao98/composite-actions/setup-node-environment@main
-      - run: npx semantic-release@24
-        if: ${{ vars.GITEA_ACTIONS != 'true' }}
+      # - run: npx semantic-release@24
+      #   if: ${{ vars.GITEA_ACTIONS != 'true' }}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #  --dry-run
+
+      - run: node run.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #  --dry-run
-      
-      # - run: node run.mjs
       # - run: git status
       # - name: 检查是否有未推送的 tag
       #   run: git tag -l --sort=-creatordate | while read tag; do git ls-remote --tags origin | grep -q "$tag" || echo "$tag"; done
