@@ -19,6 +19,7 @@ jobs:
     steps:
       - uses: yanhao98/composite-actions/setup-node-environment@main
       - run: npx semantic-release@24
+        if: ${{ vars.GITEA_ACTIONS != 'true' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #  --dry-run
