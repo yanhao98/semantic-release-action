@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/yanhao98/semantic-release-example/compare/v1.1.0...v1.2.0) (2024-09-30)
+
+
+### Features
+
+* 添加TypeScript支持，配置tsconfig.json并创建基本的index.ts文件 ([1faa149](https://github.com/yanhao98/semantic-release-example/commit/1faa1493dd1f95eb0132c4e66aa880b517c213f9))
+
 # [1.1.0](https://github.com/yanhao98/semantic-release-example/compare/v1.0.5...v1.1.0) (2024-09-30)
 
 
