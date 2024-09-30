@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/yanhao98/semantic-release-example/compare/v1.0.1...v1.0.2) (2024-09-30)
+
+
+### Bug Fixes
+
+* 添加条件以避免在 Gitea Actions 中运行 semantic-release ([b3c8f79](https://github.com/yanhao98/semantic-release-example/commit/b3c8f7988495ee86e7e48d3b6a0754a8ef17e805))
+
 ## [1.0.1](https://github.com/yanhao98/semantic-release-example/compare/v1.0.0...v1.0.1) (2024-09-30)
 
 
