@@ -17,7 +17,9 @@ jobs:
     #   id-token: write
     steps:
       - uses: yanhao98/composite-actions/setup-node-environment@main
-      - run: npx semantic-release@24 --dry-run
+      - run: npx semantic-release@24
+      #  --dry-run
+      
       # - run: node run.mjs
       # - run: git status
       # - name: 检查是否有未推送的 tag
