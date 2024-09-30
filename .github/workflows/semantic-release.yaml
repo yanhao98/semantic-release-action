@@ -13,8 +13,10 @@ env:
 jobs:
   release:
     runs-on: ubuntu-latest
-    # permissions:
-    #   id-token: write
+    permissions:
+      contents: read
+      packages: write
+      actions: write
     steps:
       - uses: yanhao98/composite-actions/setup-node-environment@main
       - run: npx semantic-release@24
