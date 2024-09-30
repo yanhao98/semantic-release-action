@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/yanhao98/semantic-release-example/compare/v1.0.3...v1.0.4) (2024-09-30)
+
+
+### Bug Fixes
+
+* **f1:** 修复f1，添加重复修复记录 ([15dfd5c](https://github.com/yanhao98/semantic-release-example/commit/15dfd5c72698bbb3b127a88c188c0411827855c6))
+
 ## [1.0.3](https://github.com/yanhao98/semantic-release-example/compare/v1.0.2...v1.0.3) (2024-09-30)
 
 
