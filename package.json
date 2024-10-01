@@ -17,7 +17,8 @@
 	"renovate": {
 		"extends": [
 			"https://git.1-h.cc/examples/renovate-example/raw/branch/main/default.json5"
-		]
+		],
+		"dependencyDashboard": false
 	},
 	"release": {
 		"plugins": [
