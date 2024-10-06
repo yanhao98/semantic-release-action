@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/yanhao98/semantic-release-action/compare/v1.1.0...v1.1.1) (2024-10-06)
+
+
+### Bug Fixes
+
+* update action reference and enhance documentation ([64aca0e](https://github.com/yanhao98/semantic-release-action/commit/64aca0ecbfe377aeb2ad1adf2efc95abbc8d2292))
+
 # [1.1.0](https://github.com/yanhao98/semantic-release-example/compare/v1.0.0...v1.1.0) (2024-10-06)
 
 
