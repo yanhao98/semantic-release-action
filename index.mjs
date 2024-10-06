@@ -2,7 +2,6 @@ import { exec as execCallback } from 'node:child_process';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { promisify } from 'node:util';
-import core from '@actions/core';
 const exec = promisify(execCallback);
 const self_cwd = dirname(fileURLToPath(import.meta.url));
 // import packageJson from './package.json' with { type: "json" };
@@ -21,6 +20,7 @@ async function installDependencies() {
 }
 
 async function runRelease() {
+  const core = await import('@actions/core');
   const semanticRelease = await import('semantic-release');
   const result = await semanticRelease.default(
     {
