@@ -20,3 +20,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - uses: yanhao98/semantic-release-example@main
+        id: release
+      - name: Print the new release version
+        run: |
+          echo ${{ steps.release.outputs.next_release_published }}
+          echo ${{ steps.release.outputs.next_release_version }}

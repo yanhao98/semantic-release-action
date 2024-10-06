@@ -4,6 +4,9 @@ author: 'Your name or organization here'
 branding:
   icon: 'heart'
   color: 'red'
+outputs:
+  next_release_version:
+    description: 'Version of the new release'
 runs:
   # pre: 'index.mjs'
   using: 'node20'
