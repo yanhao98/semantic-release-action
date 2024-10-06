@@ -1,0 +1,35 @@
+name: 持续集成
+
+on:
+  push:
+    branches:
+      - main
+concurrency:
+  group: 'ci'
+  cancel-in-progress: true
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:                # Job-level permissions configuration starts here
+      contents: write           # 'write' access to repository contents
+      pull-requests: write      # 'write' access to pull requests
+    steps:
+      - uses: yanhao98/composite-actions/setup-node-environment@main
+      # - run: npx semantic-release@24
+      #   if: ${{ vars.GITEA_ACTIONS != 'true' }}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #  --dry-run
+
+      - run: node run.mjs
+        id: semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Get the output
+        run: echo "The output was ${{ steps.semantic-release.outputs.version }}"
+      # - run: git status
+      # - name: 检查是否有未推送的 tag
+      #   run: git tag -l --sort=-creatordate | while read tag; do git ls-remote --tags origin | grep -q "$tag" || echo "$tag"; done

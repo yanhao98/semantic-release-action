@@ -1,0 +1,22 @@
+name: 持续集成
+
+on:
+  push:
+    branches:
+      - main
+concurrency:
+  group: 'ci'
+  cancel-in-progress: true
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:                # Job-level permissions configuration starts here
+      contents: write           # 'write' access to repository contents
+      pull-requests: write      # 'write' access to pull requests
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - uses: yanhao98/semantic-release-example@main

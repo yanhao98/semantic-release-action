@@ -1,0 +1,10 @@
+name: 'The name of your action here'
+description: 'Provide a description here'
+author: 'Your name or organization here'
+branding:
+  icon: 'heart'
+  color: 'red'
+runs:
+  # pre: 'index.mjs'
+  using: 'node20'
+  main: 'index.mjs'
