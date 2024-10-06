@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/yanhao98/semantic-release-example/compare/v1.0.0...v1.1.0) (2024-10-06)
+
+
+### Features
+
+* A ([a759e22](https://github.com/yanhao98/semantic-release-example/commit/a759e22efef869650130e3d29d72c776453f8460))
+* dynamically import '@actions/core' in runRelease function ([ee0a168](https://github.com/yanhao98/semantic-release-example/commit/ee0a168f6e0ff1c956bc1c64d0b3ca95bedd727f))
+
 # 1.0.0 (2024-10-06)
 
 
