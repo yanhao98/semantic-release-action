@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - uses: yanhao98/semantic-release-example@main
+      - uses: yanhao98/semantic-release-action@main
         id: release
       - name: Print the new release version
         run: |

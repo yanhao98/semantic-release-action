@@ -16,6 +16,7 @@ BREAKING CHANGE:
 
 ## 参考
 ---
+- https://github.dev/cycjimmy/semantic-release-action
 - [Can I run semantic-release on my local machine rather than on a CI server?](https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-run-semantic-release-on-my-local-machine-rather-than-on-a-ci-server)
 - [Can I use semantic-release to publish non-JavaScript packages?](https://semantic-release.gitbook.io/semantic-release/support/faq#can-i-use-semantic-release-to-publish-non-javascript-packages)
 - [pre-release-branches](https://semantic-release.gitbook.io/semantic-release/usage/workflow-configuration#pre-release-branches)
