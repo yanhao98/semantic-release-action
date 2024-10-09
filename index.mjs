@@ -39,6 +39,9 @@ async function runRelease() {
   } else {
     core.setOutput('next_release_published', 'false');
   }
+  await core.group('Semantic Release Result', async () => {
+    core.info(`result :>> ${JSON.stringify(result, null, 2)}`);
+  });
 }
 
 if (process.env.CI) await installDependencies();
