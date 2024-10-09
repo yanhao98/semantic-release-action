@@ -11,6 +11,7 @@ async function installDependencies() {
   // const _extras = extras.replace(/['"]/g, '').replace(/[\n\r]/g, ' ');
   const deps = [
     'semantic-release',
+    '@semantic-release/exec',
     '@actions/core',
   ].join(' ');
   const { stdout, stderr } = await exec(`npm install ${deps} --no-audit --no-save`, {
