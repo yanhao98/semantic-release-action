@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/yanhao98/semantic-release-action/compare/v1.1.1...v1.2.0) (2024-10-09)
+
+
+### Features
+
+* log semantic release result in a grouped output ([1ae25ac](https://github.com/yanhao98/semantic-release-action/commit/1ae25ac339f009d3fc5d4da0aa5ece8d15552826))
+
 ## [1.1.1](https://github.com/yanhao98/semantic-release-action/compare/v1.1.0...v1.1.1) (2024-10-06)
 
 
